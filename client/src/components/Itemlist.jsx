@@ -1,5 +1,5 @@
 import React from "react";
-
+// this list item
 const Itemlist = (props) => (
   <div>
     <ul className="item-list">
@@ -12,7 +12,6 @@ const Itemlist = (props) => (
       <li className="item-list-item">item 7</li>
       <li className="item-list-item">item 8</li>
       <li className="item-list-item">item 9</li>
-      
     </ul>
   </div>
 );
