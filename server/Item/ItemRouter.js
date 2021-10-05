@@ -1,9 +1,14 @@
 var ItemRouter = require('express').Router();
 var ItemController = require('./ItemController');
 
-// TODO: Create route handlers for each of the six methods in pokemonController
-ItemRouter.route('/')
+ItemRouter.route('/api/admin').get(ItemController.retrieve)
+ItemRouter.route('/api/admin').post(ItemController.createOne)
+ItemRouter.route('/api/admin').delete(ItemController.deleteAll)
 
-ItemRouter.route('/:number')
+ItemRouter.route('/api/admin/:number').put(ItemController.updateOne)
+ItemRouter.route('/api/admin/:number').delete(ItemController.deleteOne)
+ItemRouter.route('/api/admin/:number').get(ItemController.retrieveOne)
+
+
 
 module.exports = ItemRouter;
