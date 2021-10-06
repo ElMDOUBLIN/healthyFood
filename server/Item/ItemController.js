@@ -1,17 +1,53 @@
 var Item = require('./Item');
 
-// TODO: Complete each of the following controller methods
+
+// create new item
 exports.createOne = function (req, res) {
+    Item.create(req.body).then((result) => {
+        res.send(result);
+    }).catch((err) => {
+        res.send(err)
+    })
 };
-
+// get all items
 exports.retrieve = function (req, res) {
+    Item.find({}).then((result) => {
+        res.send(result)
+    }).catch((err) => {
+        res.send(err)
+    })
 };
-
+// get one item
 exports.retrieveOne = function (req, res) {
+    Item.findOne({ number: req.params.number }).then((result) => {
+        res.send(result)
+    }).catch((err) => {
+        res.send(err)
+    })
 };
-
+// update one item
 exports.updateOne = function (req, res) {
+    Item.findOneAndUpdate({ number: req.params.number }, req.body).then((result) => {
+        res.json(result)
+    }).catch((err) => {
+        res.send(err)
+    })
+
+};
+// delete one item
+exports.deleteOne = function (req, res) {
+    Item.deleteOne({ number: req.params.number }).then((result) => {
+        res.send(result)
+    }).catch((err) => {
+        res.send(err)
+    })
 };
 
-exports.deleteOne = function (req, res) {
-};
+// delete all items
+exports.deleteAll = function (req, res) {
+    Item.deleteMany({}).then((result) => {
+        res.send(result)
+    }).catch((err) => {
+        res.send(err)
+    })
+}

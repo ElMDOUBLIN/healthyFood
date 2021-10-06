@@ -1,19 +1,70 @@
 /* TODO: Please feel free to write your own css classes here */
 
-
-
-
-
-
-
-
-
-
 /* Below is the initial style that was created for you. feel free to overwrite it. */
 
 /* 
 ***********************************************************************************
 */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  /* padding: 16px; */
+  min-height: 350px;
+  margin: 20px;
+  list-style: none;
+  border: 1px solid #77777769;
+  background-color: #fdfdfd;
+  border-radius: 4px;
+  padding: 30px 50px 0px 50px;
+  box-shadow: 0 0 1em #80808066;
+  width: 500px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Francois+One|PT+Serif:400,400i,700,700i");
 
@@ -30,7 +81,7 @@ h2 {
 }
 
 .item-list-item {
-  min-height: 350px;
+  min-height: 600px;
   margin: 20px;
   list-style: none;
   border: 1px solid #77777769;
@@ -38,7 +89,7 @@ h2 {
   border-radius: 4px;
   padding: 30px 50px 0px 50px;
   box-shadow: 0 0 1em #80808066;
-  width: 200px;
+  width: 400px;
 }
 
 .item-list {
@@ -80,7 +131,7 @@ button {
 }
 
 .nav {
-  background-color: brown;
+  background-color: green;
   margin: 0px;
   padding: 10px;
   display: flex;
@@ -103,7 +154,18 @@ button {
   font-size: 1.1em;
 }
 
-.pokemon {
+.item {
   padding: 0px 10% 0px 10%;
   display: flex;
+}
+.btn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }

@@ -3,15 +3,20 @@ import React from "react";
 const Itemlist = (props) => (
   <div>
     <ul className="item-list">
-      <li className="item-list-item">item 1</li>
-      <li className="item-list-item">item 2</li>
-      <li className="item-list-item">item 3</li>
-      <li className="item-list-item">item 4</li>
-      <li className="item-list-item">item 5</li>
-      <li className="item-list-item">item 6</li>
-      <li className="item-list-item">item 7</li>
-      <li className="item-list-item">item 8</li>
-      <li className="item-list-item">item 9</li>
+      {props.items.map((item, index) => (
+        <li key={index} className="item-list-item">
+          <h1>{item.name}</h1>
+          <img src={item.imageUrl} style={{ width: "90%", height: "50%" }} />
+          <p>{item.benefits}</p>
+          <p className="price">{item.price}</p>
+          <p>
+            <button className="btn">update</button>
+            <br></br>
+            <br></br>
+            <button className="btn">delete</button>
+          </p>
+        </li>
+      ))}
     </ul>
   </div>
 );
