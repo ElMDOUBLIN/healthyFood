@@ -29,6 +29,8 @@ class Admin extends React.Component {
 
             <input type="text" placeholder="Price" />
             <button className="registerbtn">validate</button>
+            <br></br>
+            <br></br>
           </div>
         </div>
       </div>
