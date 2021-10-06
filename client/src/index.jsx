@@ -5,6 +5,7 @@ import axios from "axios";
 import Itemlist from "./components/Itemlist.jsx";
 import Itemdetails from "./components/Itemdetails.jsx";
 import Admin from "./components/Admin.jsx";
+import Update from "./components/Update.jsx";
 
 class App extends React.Component {
   constructor() {
@@ -33,7 +34,9 @@ class App extends React.Component {
     if (view === "itemlist") {
       return <Itemlist items={this.state.items} />;
     } else if (view === "admin") {
-      return <Admin items={this.state.items} />;
+      return <Admin items={this.state.items} changeView={this.changeView} />;
+    } else if (view === "update") {
+      return <Update items={this.state.items} changeView={this.changeView} />;
     } else {
       return <Itemdetails />;
     }

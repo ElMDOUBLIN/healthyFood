@@ -3,7 +3,8 @@ var Item = require('./Item');
 
 // create new item
 exports.createOne = function (req, res) {
-    Item.create(req.body).then((result) => {
+    const newitem = new Item(req.body)
+    newitem.save().then((result) => {
         res.send(result);
     }).catch((err) => {
         res.send(err)
@@ -27,7 +28,7 @@ exports.retrieveOne = function (req, res) {
 };
 // update one item
 exports.updateOne = function (req, res) {
-    Item.findOneAndUpdate({ number: req.params.number }, req.body).then((result) => {
+    Item.findOneAndUpdate({ _id: req.params.id }, req.body).then((result) => {
         res.json(result)
     }).catch((err) => {
         res.send(err)
