@@ -1,8 +1,32 @@
 import React from "react";
+import axios from "axios";
 
 class Admin extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name: "",
+      benefits: "",
+      image: "",
+      Price: "",
+    };
+    this.handlechange = this.handlechange.bind(this);
+    this.create = this.create.bind(this);
+  }
+  componentDidMount() {
+    axios.get("http://localhost:3000/api/admin").then((data) => {
+      console.log(data);
+    });
+  }
+  // handle change inputs
+  handlechange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+    console.log(this.state);
+  }
+  create() {
+    axios.post("http://localhost:3000/api/admin", this.state).then((data) => {
+      console.log(data.data);
+    });
   }
   render() {
     return (
@@ -15,26 +39,51 @@ class Admin extends React.Component {
             <label>
               <b>Healthy meal name:</b>
             </label>
-            <input type="text" placeholder="Enter meal name " />
+            <input
+              name="name"
+              type="text"
+              placeholder="Enter meal name "
+              onChange={this.handlechange}
+            />
             <label>
               <b>Benefits:</b>
             </label>
-            <input type="text" placeholder="Enter Benefits" />
+            <input
+              name="benefits"
+              type="text"
+              placeholder="Enter Benefits"
+              onChange={this.handlechange}
+            />
 
             <label>
               <b> Add image</b>
             </label>
-            <input type="text" placeholder=" Add image" />
+            <input
+              name="image"
+              type="text"
+              placeholder=" Add image"
+              onChange={this.handlechange}
+            />
 
             <label>
               <b> Price</b>
             </label>
 
-            <input type="text" placeholder="Price" />
-            <button className="registerbtn">validate</button>
+            <input
+              name="price"
+              type="text"
+              placeholder="Price"
+              onChange={this.handlechange}
+            />
+            <button onClick={this.create} className="registerbtn">
+              validate
+            </button>
             <br></br>
             <br></br>
           </div>
+        </div>
+        <div>
+          <h1>Liste HealthyFood meals</h1>
         </div>
         <div>
           <ul className="item-list">

@@ -6,9 +6,8 @@ mongoose.Promise = global.Promise;
 
 // itemSchema 
 var ItemSchema = mongoose.Schema({
-    number: { type: Number, unique: true },
     name: String,
-    benefits: Array,
+    benefits: String,
     imageUrl: String,
     price: Number
 })

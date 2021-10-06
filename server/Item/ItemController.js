@@ -3,7 +3,8 @@ var Item = require('./Item');
 
 // create new item
 exports.createOne = function (req, res) {
-    Item.create(req.body).then((result) => {
+    const newitem = new Item(req.body)
+    newitem.save().then((result) => {
         res.send(result);
     }).catch((err) => {
         res.send(err)
