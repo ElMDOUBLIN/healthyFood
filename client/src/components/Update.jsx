@@ -3,10 +3,24 @@ import React from "react";
 class Update extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name: "",
+      benefits: "",
+      image: "",
+      Price: "",
+    };
+    this.update = this.update.bind(this);
+  }
+
+  handlechange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+    console.log(this.state);
   }
 
   update(id) {
-    // handle update in this components
+    axios.put(`/api/admin/${id}`, this.state).then((data) => {
+      console.log(data.data);
+    });
   }
   render() {
     return (
@@ -54,7 +68,9 @@ class Update extends React.Component {
             placeholder="Price"
             onChange={this.handlechange}
           />
-          <button className="registerbtn">update</button>
+          <button className="registerbtn" onClick={this.update}>
+            update
+          </button>
           <br></br>
           <br></br>
         </div>
