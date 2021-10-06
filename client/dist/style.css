@@ -81,7 +81,7 @@ h2 {
 }
 
 .item-list-item {
-  min-height: 400px;
+  min-height: 600px;
   margin: 20px;
   list-style: none;
   border: 1px solid #77777769;
@@ -157,4 +157,15 @@ button {
 .item {
   padding: 0px 10% 0px 10%;
   display: flex;
+}
+.btn {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }

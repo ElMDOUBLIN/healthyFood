@@ -33,7 +33,7 @@ class App extends React.Component {
     if (view === "itemlist") {
       return <Itemlist items={this.state.items} />;
     } else if (view === "admin") {
-      return <Admin />;
+      return <Admin items={this.state.items} />;
     } else {
       return <Itemdetails />;
     }

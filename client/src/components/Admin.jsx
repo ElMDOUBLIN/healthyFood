@@ -1,6 +1,9 @@
 import React from "react";
 
 class Admin extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     return (
       <div>
@@ -32,6 +35,27 @@ class Admin extends React.Component {
             <br></br>
             <br></br>
           </div>
+        </div>
+        <div>
+          <ul className="item-list">
+            {this.props.items.map((item, index) => (
+              <li key={index} className="item-list-item">
+                <h1>{item.name}</h1>
+                <img
+                  src={item.imageUrl}
+                  style={{ width: "90%", height: "50%" }}
+                />
+                <p>{item.benefits}</p>
+                <p className="price">{item.price}</p>
+                <p>
+                  <button className="btn">update</button>
+                  <br></br>
+                  <br></br>
+                  <button className="btn">delete</button>
+                </p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     );
