@@ -81,7 +81,7 @@ h2 {
 }
 
 .item-list-item {
-  min-height: 350px;
+  min-height: 400px;
   margin: 20px;
   list-style: none;
   border: 1px solid #77777769;
@@ -89,7 +89,7 @@ h2 {
   border-radius: 4px;
   padding: 30px 50px 0px 50px;
   box-shadow: 0 0 1em #80808066;
-  width: 200px;
+  width: 400px;
 }
 
 .item-list {
@@ -154,7 +154,7 @@ button {
   font-size: 1.1em;
 }
 
-.pokemon {
+.item {
   padding: 0px 10% 0px 10%;
   display: flex;
 }

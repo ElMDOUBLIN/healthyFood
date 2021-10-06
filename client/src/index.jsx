@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import axios from "axios";
 
 import Itemlist from "./components/Itemlist.jsx";
 import Itemdetails from "./components/Itemdetails.jsx";
@@ -10,8 +11,15 @@ class App extends React.Component {
     super();
     this.state = {
       view: "itemlist",
+      items: [],
     };
     this.changeView = this.changeView.bind(this);
+  }
+  componentDidMount() {
+    axios.get("http://localhost:3000/api/admin").then((data) => {
+      // console.log(data.data);
+      this.setState({ items: data.data });
+    });
   }
 
   changeView(option) {
@@ -23,7 +31,7 @@ class App extends React.Component {
   renderView() {
     const { view } = this.state;
     if (view === "itemlist") {
-      return <Itemlist />;
+      return <Itemlist items={this.state.items} />;
     } else if (view === "admin") {
       return <Admin />;
     } else {
