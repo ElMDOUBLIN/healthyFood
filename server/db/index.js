@@ -1,7 +1,8 @@
-var mongoose = require('mongoose');
-var mongoUri = 'mongodb://localhost/items';
+const mongoose = require('mongoose');
+const mongoUri = 'mongodb://localhost/items';
 
-// TODO: Connect Mongoose to our local MongoDB via URI specified above and export it below
-var db;
+const db = mongoose.connect(mongoUri)
+    .then(console.log('database connected'))
+    .catch(err => console.log(err))
 
 module.exports = db;
