@@ -28,7 +28,7 @@ exports.retrieveOne = function (req, res) {
 };
 // update one item
 exports.updateOne = function (req, res) {
-    Item.findOneAndUpdate({ number: req.params.number }, req.body).then((result) => {
+    Item.findOneAndUpdate({ _id: req.params._id }, req.body).then((result) => {
         res.json(result)
     }).catch((err) => {
         res.send(err)

@@ -97,7 +97,14 @@ class Admin extends React.Component {
                 <p>{item.benefits}</p>
                 <p className="price">{item.price}</p>
                 <p>
-                  <button className="btn">update</button>
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      this.props.changeView("update");
+                    }}
+                  >
+                    update
+                  </button>
                   <br></br>
                   <br></br>
                   <button className="btn">delete</button>
