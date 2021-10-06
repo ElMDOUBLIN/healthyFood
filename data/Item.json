@@ -1,0 +1,177 @@
+[
+  {
+    "number": 1,
+    "name": "Broccoli",
+    "benefits": ["Grass", "Poison"],
+    "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/benefits-of-broccoli-1200x628-facebook-1200x628.jpg",
+    "price":""
+  },
+  {
+    "number": 2,
+    "name": "Kale",
+    "benefits": ["Grass", "Poison"],
+    "imageUrl": "https://www.bolster.eu/media/images/1450_dbweb.jpg?1549350221",
+    "price":""
+  },
+  {
+    "number": 3,
+    "name": "Artichoke",
+    "benefits": ["Grass", "Poison"],
+    "imageUrl": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/07/25/130168.jpg",
+    "price":""
+  },
+  {
+    "number": 4,
+    "name": "Asparagus",
+    "benefits": ["Fire"],
+    "imageUrl": "https://www.simplyrecipes.com/thmb/mBVtPiW0gVsFoeqzdkMm8Gn_2UI=/4256x2394/smart/filters:no_upscale()/Simply-Recipes-Asparagus_LEAD_1-5cabadd31da547d5ba0e5c53e1250307.jpg",
+    "price":""
+  },
+  {
+    "number": 5,
+    "name": "Beetroot",
+    "benefits": ["Fire"],
+    "imageUrl": "https://english.mathrubhumi.com/polopoly_fs/1.3373581.1544164308!/image/image.jpg_gen/derivatives/landscape_894_577/image.jpg",
+    "price":""
+  },
+  {
+    "number": 6,
+    "name": "Bell pepper",
+    "benefits": ["Fire", "Flying"],
+    "imageUrl": "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVsbCUyMHBlcHBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
+    "price":""
+  },
+  {
+    "number": 7,
+    "name": "Brussel sprouts",
+    "benefits": ["Water"],
+    "imageUrl": "https://ca-times.brightspotcdn.com/dims4/default/ef29aad/2147483647/strip/true/crop/5504x3669+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff3%2F66%2Fda98d1ec4b3597d45fa8e3919323%2F473265-fo-1121-cooking-mrt-008.JPG",
+    "price":""
+  },
+  {
+    "number": 8,
+    "name": "Cabbage",
+    "benefits": ["Water"],
+    "imageUrl": "https://media.gettyimages.com/photos/cabbages-picture-id622370636?s=612x612",
+    "price":""
+  },
+  {
+    "number": 9,
+    "name": "Red cabbage",
+    "benefits": ["Water"],
+    "imageUrl": "https://media.istockphoto.com/photos/red-cabbage-picture-id506393734",
+    "price":""
+  },
+  {
+    "number": 10,
+    "name": "Carrots",
+    "benefits": ["Bug"],
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Carrots_on_Display.jpg/1200px-Carrots_on_Display.jpg",
+    "price":""
+  },
+  {
+    "number": 11,
+    "name": "Cauliflower",
+    "benefits": ["Bug"],
+    "imageUrl": "https://post.psychcentral.com/wp-content/uploads/2020/09/cauliflower-thumb.jpg",
+    "price":""
+  },
+  {
+    "number": 12,
+    "name": "Celery",
+    "benefits": ["Bug", "Flying"],
+    "imageUrl": "https://www.gardeningknowhow.com/wp-content/uploads/2021/03/closeup-of-growing-celery-plantation.jpg",
+    "price":""
+  },
+  {
+    "number": 13,
+    "name": "Corn",
+    "benefits": ["Bug", "Poison"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-973555096-1583765387.jpg?crop=0.669xw:1.00xh;0.333xw,0&resize=480:*",
+    "price":""
+  },
+  {
+    "number": 14,
+    "name": "Cucumber",
+    "benefits": ["Bug", "Poison"],
+    "imageUrl": "https://gardenerspath.com/wp-content/uploads/2021/05/benefits-of-Cucumbers-FB.jpg",
+    "price":""
+  },
+  {
+    "number": 15,
+    "name": "Eggplant",
+    "benefits": ["Bug", "Poison"],
+    "imageUrl": "https://cdn.theatlantic.com/thumbor/8oVr-FKH8sajN3l8fpGNPBDwqEc=/0x667:7285x4765/960x540/media/img/mt/2019/11/shutterstock_1486590509/original.jpg",
+    "price":""
+  },
+  {
+    "number": 16,
+    "name": "Green bean",
+    "benefits": ["Normal", "Flying"],
+    "imageUrl": "https://cgreenag.com/assets/images/crop-images/std/green%20beans%20erik.png",
+    "price":""
+  },
+  {
+    "number": 17,
+    "name": "Lettuce",
+    "benefits": ["Normal", "Flying"],
+    "imageUrl": "https://images.medicinenet.com/images/article/main_image/is-it-safe-to-eat-romaine-lettuce.jpg",
+    "price":""
+  },
+  {
+    "number": 18,
+    "name": "Mushrooms",
+    "benefits": ["Normal", "Flying"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-mushrooms-royalty-free-image-1614206095.",
+    "price":""
+  },
+  {
+    "number": 19,
+    "name": "Onion",
+    "benefits": ["Normal"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-mushrooms-royalty-free-image-1614206095.",
+    "price":""
+  },
+  {
+    "number": 20,
+    "name": "Pea",
+    "benefits": ["Normal"],
+    "imageUrl": "https://www.almanac.com/sites/default/files/image_nodes/peas-and-pea-pods.jpg",
+    "price":""
+  },
+  {
+    "number": 21,
+    "name": "Potato",
+    "benefits": ["Normal", "Flying"],
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToDOR6Lah3jlphwUwpKPDymrkBCfBGhnho6Q&usqp=CAU",
+    "price":""
+  },
+  {
+    "number": 22,
+    "name": "Pumpkin",
+    "benefits": ["Normal", "Flying"],
+    "imageUrl": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/health_benefits_of_pumpkins_slideshow/1800x1200_health_benefits_of_pumpkins_slideshow.jpg",
+    "price":""
+  },
+  {
+    "number": 23,
+    "name": "Radish",
+    "benefits": ["Poison"],
+    "imageUrl": "https://www.gardeningknowhow.com/wp-content/uploads/2009/03/radish.jpg",
+    "price":""
+  },
+  {
+    "number": 24,
+    "name": "Sweet potato",
+    "benefits": ["Poison"],
+    "imageUrl": "https://m.media-amazon.com/images/I/71ofgqWjsCL._SL1500_.jpg",
+    "price":""
+  },
+  {
+    "number": 25,
+    "name": "Tomato",
+    "benefits": ["Electric"],
+    "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/tomatoes-1200x628-facebook-1200x628.jpg",
+    "price":""
+  }
+]
