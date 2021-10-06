@@ -47,7 +47,9 @@ class App extends React.Component {
             See all HealthyFood meals
           </span>
           <span
-            className="nav-unselected"
+            className={
+              this.state.view === "admin" ? "nav-selected" : "nav-unselected"
+            }
             onClick={() => {
               this.changeView("admin");
             }}
