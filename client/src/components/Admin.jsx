@@ -6,18 +6,17 @@ class Admin extends React.Component {
     super(props);
     this.state = {
       name: "",
-      benefits: "",
-      image: "",
-      Price: "",
+      ingredients: "",
+      imageUrl: "",
+      price: "",
     };
     this.handlechange = this.handlechange.bind(this);
     this.create = this.create.bind(this);
+    this.delItem = this.delItem.bind(this);
   }
-  componentDidMount() {
-    axios.get("http://localhost:3000/api/admin").then((data) => {
-      console.log(data);
-    });
-  }
+  // componentDidMount() {
+  //  this.props.fetch()
+  // }
   // handle change inputs
   handlechange(event) {
     this.setState({ [event.target.name]: event.target.value });
@@ -25,9 +24,15 @@ class Admin extends React.Component {
   }
   create() {
     axios.post("http://localhost:3000/api/admin", this.state).then((data) => {
-      console.log(data.data);
+      console.log(data);
     });
   }
+  delItem(id) {
+    axios.delete(`http://localhost:3000/api/admin/${id}`).then(() => {
+      this.props.fetch();
+    });
+  }
+
   render() {
     return (
       <div>
@@ -46,12 +51,12 @@ class Admin extends React.Component {
               onChange={this.handlechange}
             />
             <label>
-              <b>Benefits:</b>
+              <b>Ingredients:</b>
             </label>
             <input
-              name="benefits"
+              name="ingredients"
               type="text"
-              placeholder="Enter Benefits"
+              placeholder="Enter ingredients"
               onChange={this.handlechange}
             />
 
@@ -94,20 +99,27 @@ class Admin extends React.Component {
                   src={item.imageUrl}
                   style={{ width: "90%", height: "50%" }}
                 />
-                <p>{item.benefits}</p>
+                <p>{item.ingredients}</p>
                 <p className="price">{item.price}</p>
                 <p>
                   <button
                     className="btn"
                     onClick={() => {
-                      this.props.changeView("update");
+                      this.props.changeView("update", item);
                     }}
                   >
                     update
                   </button>
                   <br></br>
                   <br></br>
-                  <button className="btn">delete</button>
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      this.delItem(item._id);
+                    }}
+                  >
+                    delete
+                  </button>
                 </p>
               </li>
             ))}

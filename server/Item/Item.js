@@ -7,9 +7,9 @@ mongoose.Promise = global.Promise;
 // itemSchema 
 var ItemSchema = mongoose.Schema({
     name: String,
-    benefits: String,
+    ingredients: Array,
     imageUrl: String,
-    price: Number
+    price: String
 })
 
 var Item = mongoose.model('Item', ItemSchema)

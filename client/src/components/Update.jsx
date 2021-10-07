@@ -1,13 +1,31 @@
 import React from "react";
+import axios from "axios";
 
 class Update extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      name: this.props.item.name,
+      ingredients: this.props.item.ingredients,
+      imageUrl: this.props.item.imageUrl,
+      price: this.props.item.price,
+    };
+    this.update = this.update.bind(this);
+    this.handlechange = this.handlechange.bind(this);
   }
 
   update(id) {
-    // handle update in this components
+    axios.put(`http://localhost:3000/api/admin/${id}`, this.state).then(() => {
+      this.props.changeView("admin", this.state);
+      this.props.fetch();
+    });
   }
+
+  handlechange(event) {
+    this.setState({ [event.target.name]: event.target.value });
+    console.log(this.state);
+  }
+
   render() {
     return (
       <div>
@@ -21,16 +39,18 @@ class Update extends React.Component {
           <input
             name="name"
             type="text"
+            value={this.state.name}
             placeholder="Enter meal name "
             onChange={this.handlechange}
           />
           <label>
-            <b>Benefits:</b>
+            <b>Ingredients:</b>
           </label>
           <input
-            name="benefits"
+            name="ingredients"
             type="text"
-            placeholder="Enter Benefits"
+            placeholder="Enter ingredients"
+            value={this.state.ingredients}
             onChange={this.handlechange}
           />
 
@@ -41,6 +61,7 @@ class Update extends React.Component {
             name="image"
             type="text"
             placeholder=" Add image"
+            value={this.state.imageUrl}
             onChange={this.handlechange}
           />
 
@@ -52,9 +73,18 @@ class Update extends React.Component {
             name="price"
             type="text"
             placeholder="Price"
+            value={this.state.price}
             onChange={this.handlechange}
           />
-          <button className="registerbtn">update</button>
+          {/* {console.log(this.props.item._id)} */}
+          <button
+            className="registerbtn"
+            onClick={() => {
+              this.update(this.props.item._id);
+            }}
+          >
+            update
+          </button>
           <br></br>
           <br></br>
         </div>

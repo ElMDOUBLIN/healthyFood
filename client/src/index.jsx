@@ -13,30 +13,55 @@ class App extends React.Component {
     this.state = {
       view: "itemlist",
       items: [],
+      item: {},
     };
     this.changeView = this.changeView.bind(this);
+    this.fetch = this.fetch.bind(this);
   }
-  componentDidMount() {
+
+  fetch() {
     axios.get("http://localhost:3000/api/admin").then((data) => {
       // console.log(data.data);
       this.setState({ items: data.data });
     });
   }
-
-  changeView(option) {
+  componentDidMount() {
+    this.fetch();
+  }
+  changeView(option, item) {
     this.setState({
       view: option,
+      item: item,
     });
   }
 
+  // updateitem(updateitem) {
+  //   this.setState({
+  //     items: this.state.items.filter((item) => item._id !== updateitem._id),
+  //   });
+  // }
   renderView() {
     const { view } = this.state;
     if (view === "itemlist") {
       return <Itemlist items={this.state.items} />;
     } else if (view === "admin") {
-      return <Admin items={this.state.items} changeView={this.changeView} />;
+      return (
+        <Admin
+          item={this.state.item}
+          items={this.state.items}
+          fetch={this.fetch}
+          changeView={this.changeView}
+        />
+      );
     } else if (view === "update") {
-      return <Update items={this.state.items} changeView={this.changeView} />;
+      return (
+        <Update
+          item={this.state.item}
+          items={this.state.items}
+          fetch={this.fetch}
+          changeView={this.changeView}
+        />
+      );
     } else {
       return <Itemdetails />;
     }
