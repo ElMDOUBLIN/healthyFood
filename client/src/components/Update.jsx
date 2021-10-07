@@ -15,10 +15,9 @@ class Update extends React.Component {
   }
 
   update(id) {
-    axios.put(`http://localhost:3000/api/admin/:${id}`, this.state).then((data) => {
-      console.log(data)
-      // this.props.changeView("admin", this.state);
-      // this.props.fetch();
+    axios.put(`http://localhost:3000/api/admin/${id}`, this.state).then(() => {
+      this.props.changeView("admin", this.state);
+      this.props.fetch();
     });
   }
 
@@ -77,10 +76,11 @@ class Update extends React.Component {
             value={this.state.price}
             onChange={this.handlechange}
           />
+          {/* {console.log(this.props.item._id)} */}
           <button
             className="registerbtn"
             onClick={() => {
-              this.update(this.props.item.id);
+              this.update(this.props.item._id);
             }}
           >
             update

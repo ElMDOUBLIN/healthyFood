@@ -12,6 +12,7 @@ class Admin extends React.Component {
     };
     this.handlechange = this.handlechange.bind(this);
     this.create = this.create.bind(this);
+    this.delItem = this.delItem.bind(this);
   }
   // componentDidMount() {
   //  this.props.fetch()
@@ -23,7 +24,12 @@ class Admin extends React.Component {
   }
   create() {
     axios.post("http://localhost:3000/api/admin", this.state).then((data) => {
-      console.log(data.data);
+      console.log(data);
+    });
+  }
+  delItem(id) {
+    axios.delete(`http://localhost:3000/api/admin/${id}`).then(() => {
+      this.props.fetch();
     });
   }
 
@@ -99,14 +105,21 @@ class Admin extends React.Component {
                   <button
                     className="btn"
                     onClick={() => {
-                      this.props.changeView("update",item);
+                      this.props.changeView("update", item);
                     }}
                   >
                     update
                   </button>
                   <br></br>
                   <br></br>
-                  <button className="btn">delete</button>
+                  <button
+                    className="btn"
+                    onClick={() => {
+                      this.delItem(item._id);
+                    }}
+                  >
+                    delete
+                  </button>
                 </p>
               </li>
             ))}
