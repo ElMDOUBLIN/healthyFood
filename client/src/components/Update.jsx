@@ -1,15 +1,25 @@
 import React from "react";
+import axios from "axios";
 
 class Update extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      benefits: "",
-      image: "",
-      Price: "",
+      name: this.props.item.name,
+      ingredients: this.props.item.ingredients,
+      imageUrl: this.props.item.imageUrl,
+      price: this.props.item.price,
     };
     this.update = this.update.bind(this);
+    this.handlechange = this.handlechange.bind(this);
+  }
+
+  update(id) {
+    axios.put(`http://localhost:3000/api/admin/:${id}`, this.state).then((data) => {
+      console.log(data)
+      // this.props.changeView("admin", this.state);
+      // this.props.fetch();
+    });
   }
 
   handlechange(event) {
@@ -17,11 +27,6 @@ class Update extends React.Component {
     console.log(this.state);
   }
 
-  update(id) {
-    axios.put(`/api/admin/${id}`, this.state).then((data) => {
-      console.log(data.data);
-    });
-  }
   render() {
     return (
       <div>
@@ -35,16 +40,18 @@ class Update extends React.Component {
           <input
             name="name"
             type="text"
+            value={this.state.name}
             placeholder="Enter meal name "
             onChange={this.handlechange}
           />
           <label>
-            <b>Benefits:</b>
+            <b>Ingredients:</b>
           </label>
           <input
-            name="benefits"
+            name="ingredients"
             type="text"
-            placeholder="Enter Benefits"
+            placeholder="Enter ingredients"
+            value={this.state.ingredients}
             onChange={this.handlechange}
           />
 
@@ -55,6 +62,7 @@ class Update extends React.Component {
             name="image"
             type="text"
             placeholder=" Add image"
+            value={this.state.imageUrl}
             onChange={this.handlechange}
           />
 
@@ -66,9 +74,15 @@ class Update extends React.Component {
             name="price"
             type="text"
             placeholder="Price"
+            value={this.state.price}
             onChange={this.handlechange}
           />
-          <button className="registerbtn" onClick={this.update}>
+          <button
+            className="registerbtn"
+            onClick={() => {
+              this.update(this.props.item.id);
+            }}
+          >
             update
           </button>
           <br></br>

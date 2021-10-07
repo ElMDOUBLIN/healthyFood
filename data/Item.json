@@ -1,177 +1,506 @@
 [
   {
-    
-    "name": "Broccoli",
-    "benefits": "Grass" ,
-    "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/benefits-of-broccoli-1200x628-facebook-1200x628.jpg",
-    "price":""
+    "name": "Pan-Fried Tilapia",
+    "ingredients": [
+      " 1 c. all-purpose flour",
+      "1 tsp. garlic powder",
+      "1 tsp. onion powder",
+      "    1 tsp. chili powder",
+      "    1/2 tsp. ground cumin",
+      "    4 (6-oz.) tilapia filets",
+      "    Kosher salt",
+      "  Freshly ground black pepper",
+      "2 tbsp. canola or vegetable oil, divided",
+      "2 tbsp. cilantro leaves, for garnish",
+      "Lime wedges, for serving"
+    ],
+    "imageUrl": " https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-pan-fried-tilapia-377-1543266609.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "12 DT"
   },
   {
-    
-    "name": "Kale",
-    "benefits": "Grass",
-    "imageUrl": "https://www.bolster.eu/media/images/1450_dbweb.jpg?1549350221",
-    "price":""
+    "name": "Italian Sausage Stuffed Zucchini",
+    "ingredients": [
+      " 4 large zucchini, halved lengthwise",
+      "2 tsp. extra-virgin olive oil",
+      "4 links chicken sausage links, thinly sliced",
+      "1/2 c. italian breadcrumbs",
+      "3/4 c. shredded mozzarella",
+      " 1/2 c. shredded fontina",
+      "2 cloves garlic, minced",
+      "1/4 c. chopped fresh basil"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/16/34/2048x3077/gallery-1471887421-delish-zucchini-boats-chicken-sausage.jpg?resize=980:*",
+    "price": "14 DT"
   },
   {
-    
-    "name": "Artichoke",
-    "benefits": "Grass",
-    "imageUrl": "https://idsb.tmgrup.com.tr/ly/uploads/images/2021/07/25/130168.jpg",
-    "price":""
+    "name": "Chicken Parm Stuffed Peppers",
+    "ingredients": [
+      "3 c. shredded mozzarella, divided",
+      " 1/2 c. freshly grated Parmesan, plus more for serving",
+      "   3 cloves garlic, minced",
+      " 1 1/2 c. marinara",
+      " 1 tbsp. freshly chopped parsley, plus more for garnish",
+      "Pinch of crushed red pepper flakes",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "12 oz. fresh or frozen breaded chicken, cooked according to package instructions and diced"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/09/1519936377-chickenparmstuffedpeppers1.jpg?crop=1.0xw:1xh;center,top&resize=980:*",
+    "price": "15 DT"
   },
   {
-    
-    "name": "Asparagus",
-    "benefits": "Fire",
-    "imageUrl": "https://www.simplyrecipes.com/thmb/mBVtPiW0gVsFoeqzdkMm8Gn_2UI=/4256x2394/smart/filters:no_upscale()/Simply-Recipes-Asparagus_LEAD_1-5cabadd31da547d5ba0e5c53e1250307.jpg",
-    "price":""
+    "name": "Best Baked Catfish",
+    "ingredients": [
+      " 1/4 c. extra-virgin olive oil, divided ",
+      " 1 c. cornmeal ",
+      " 1 tbsp. Cajun seasoning",
+      " 4 catfish fillets",
+      " Kosher salt",
+      " Freshly ground black pepper",
+      " Lemon wedges, for serving"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/baked-catfish-vertical-1-1551477183.png?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "11 DT"
   },
   {
-    
-    "name": "Beetroot",
-    "benefits": "Fire",
-    "imageUrl": "https://english.mathrubhumi.com/polopoly_fs/1.3373581.1544164308!/image/image.jpg_gen/derivatives/landscape_894_577/image.jpg",
-    "price":""
+    "name": "Stuffed Cabbage Rolls",
+    "ingredients": [
+      "FOR THE SAUCE",
+      "2 tbsp. extra-virgin olive oil",
+      "1/2 large onion, chopped",
+      " 3 cloves garlic, minced",
+      "2 tbsp. tomato paste",
+      "1 (28-oz.) can crushed tomatoes",
+      "2 tbsp. balsamic vinegar",
+      " 1 tbsp. brown sugar",
+      "2 tsp. dried oregano",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      " FOR THE CABBAGE ROLLS",
+      "15 cabbage leaves",
+      " 1 lb. ground beef",
+      "1/4 c. uncooked white rice",
+      " 1/4 c. Italian bread crumbs",
+      "1/2 large onion, chopped",
+      " 2 tbsp. freshly chopped parsley, plus more for garnish",
+      "Kosher salt",
+      "Freshly ground black pepper"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-cabbage-rolls-vertical-1538569408.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "16 DT"
   },
   {
-    
-    "name": "Bell pepper",
-    "benefits": "Fire", 
-    "imageUrl": "https://images.unsplash.com/photo-1601648764658-cf37e8c89b70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YmVsbCUyMHBlcHBlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-    "price":""
+    "name": "Caprese Zoodles",
+    "ingredients": [
+      "4 large zucchini",
+      "2 tbsp. extra-virgin olive oil",
+      "kosher salt",
+      "Freshly ground black pepper",
+      "2 c. cherry tomatoes, halved",
+      "1 c. mozzarella balls, quartered if large",
+      "1/4 c. fresh basil leaves",
+      "2 tbsp. balsamic vinegar"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/16/21/1464042220-delish-summer-salads-caprese-zoodles-1.jpg?crop=1xw:0.99975xh;center,top&resize=980:*",
+    "price": "14 DT"
   },
   {
-    
-    "name": "Brussel sprouts",
-    "benefits": "Water",
-    "imageUrl": "https://ca-times.brightspotcdn.com/dims4/default/ef29aad/2147483647/strip/true/crop/5504x3669+0+0/resize/840x560!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Ff3%2F66%2Fda98d1ec4b3597d45fa8e3919323%2F473265-fo-1121-cooking-mrt-008.JPG",
-    "price":""
+    "name": "Taco Tomatoes",
+    "ingredients": [
+      "1 tbsp. extra-virgin olive oil",
+      "3/4 lb. ground beef",
+      "1 medium onion, chopped",
+      "1 (1-oz.) packet taco seasoning",
+      "4 large, ripe beefsteak tomatoes",
+      "1/2 c. shredded Mexican cheese blend",
+      "1/2 c. shredded iceberg lettuce",
+      "1/4 c. sour cream"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/42/1600x2399/gallery-1508344977-taco-tomatoes-delish-1.jpg?resize=980:*",
+    "price": "15 DT"
   },
   {
-    
-    "name": "Cabbage",
-    "benefits": "Water",
-    "imageUrl": "https://media.gettyimages.com/photos/cabbages-picture-id622370636?s=612x612",
-    "price":""
+    "name": "Skinny Alfredo",
+    "ingredients": [
+      "12 oz. whole-wheat linguine",
+      "1 tbsp. extra-virgin olive oil",
+      "3 cloves garlic, minced",
+      "2 tbsp. all-purpose flour",
+      "1 c. low-sodium chicken broth",
+      "3/4 c. 1% milk",
+      "1/2 c. freshly grated Parmesan",
+      "2 tbsp. plain Greek yogurt (optional)",
+      "Freshly ground black pepper",
+      "Pinch crushed red pepper flakes",
+      "Freshly chopped parsley, for serving"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190418-skinny-alfredo-vertical-1-1556225479.png?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "13 DT"
   },
   {
-    
-    "name": "Red cabbage",
-    "benefits": "Water",
-    "imageUrl": "https://media.istockphoto.com/photos/red-cabbage-picture-id506393734",
-    "price":""
+    "name": "Blackened Tilapia",
+    "ingredients": [
+      " FOR TILAPIA",
+      "2 tbsp. packed brown sugar",
+      " 4 tsp. ground cumin",
+      " 2 tsp. kosher salt",
+      "  2 tsp. paprika ",
+      "   2 tsp. dried oregano",
+      "1 tsp. freshly ground black pepper",
+      "1 tsp. garlic powder",
+      "4 (6-oz.) tilapia filets",
+      "2 tbsp. extra-virgin olive oil",
+      "FOR AVOCADO SALSA",
+      "2 avocados, diced",
+      " 2 tomatoes, diced",
+      "1 jalapeño, minced",
+      "2 tbsp. chopped cilantro",
+      "2 tbsp. extra-virgin olive oil",
+      "Juice of 1 lime",
+      "Kosher salt",
+      "Freshly ground black pepper"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-blackened-tilapia-vertical-1543602818.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "17 DT"
   },
   {
-    
-    "name": "Carrots",
-    "benefits": "Bug",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Carrots_on_Display.jpg/1200px-Carrots_on_Display.jpg",
-    "price":""
+    "name": "Tuscan Butter Roast Chicken",
+    "ingredients": [
+      "1 (3-lb.) whole chicken",
+      " Kosher salt",
+      " Freshly ground black pepper",
+      "1 lb. baby potatoes, halved",
+      "  1 large head broccoli, cut into florets",
+      "    1 large red onion, cut into wedges",
+      "2 c. cherry tomatoes",
+      "    2 tbsp. extra-virgin olive oil",
+      "Pinch red pepper flakes",
+      "   4 tbsp. melted butter",
+      "   3 cloves garlic, minced",
+      "    1 tsp. Italian seasoning",
+      "Spinach, for serving",
+      " 1/4 c. thinly sliced basil"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-tuscan-butter-roast-chicken-pin-1549636520.jpg?crop=1xw:0.9453781512605042xh;center,top&resize=980:*",
+    "price": "14 DT"
   },
   {
-    
-    "name": "Cauliflower",
-    "benefits": "Bug",
-    "imageUrl": "https://post.psychcentral.com/wp-content/uploads/2020/09/cauliflower-thumb.jpg",
-    "price":""
+    "name": "Primavera Stuffed Chicken",
+    "ingredients": [
+      "4 boneless, skinless chicken breasts (about 1 1/2 pounds)",
+      "1 zucchini, halved lengthwise and thinly sliced into half-moons",
+      "3 medium tomatoes, halved and thinly sliced into half-moons",
+      "2 yellow bell peppers, thinly sliced",
+      "1/2 red onion, thinly sliced",
+      "2 tbsp. extra-virgin olive oil",
+      "1 tsp. Italian seasoning",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "1 c. shredded mozzarella",
+      "Freshly chopped parsley, for garnish"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/06/1517858444-primavera-chicken-delish-1.jpg?crop=0.832xw:0.832xh;0.0952xw,0.0738xh&resize=980:*",
+    "price": "16 DT"
   },
   {
-    
-    "name": "Celery",
-    "benefits": "Bug", 
-    "imageUrl": "https://www.gardeningknowhow.com/wp-content/uploads/2021/03/closeup-of-growing-celery-plantation.jpg",
-    "price":""
+    "name": "Honey Walnut Shrimp",
+    "ingredients": [
+      "1 c. water",
+      "1 c. granulated sugar",
+      "1 c. walnuts",
+      " 1 lb. shrimp, peeled and deveined",
+      " Kosher salt",
+      "Freshly ground black pepper",
+      "2 large eggs, beaten",
+      "1 c. cornstarch",
+      "Vegetable oil for frying",
+      "1/4 c. mayonnaise",
+      "2 tbsp. honey",
+      "2 tbsp. heavy cream",
+      "Cooked white rice, for serving",
+      "Thinly sliced green onions, for garnish"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/honey-walnut-shrimp-vertical-1548093886.png?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "13 DT"
   },
   {
-  
-    "name": "Corn",
-    "benefits": "Bug", 
-    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-973555096-1583765387.jpg?crop=0.669xw:1.00xh;0.333xw,0&resize=480:*",
-    "price":""
+    "name": "Bruschetta Grilled Chicken",
+    "ingredients": [
+      "4 tbsp. extra-virgin olive oil",
+      "Juice of 1 lemon, divided",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "1 tsp. Italian seasoning or dried oregano",
+      "4 boneless skinless antibiotic free chicken breasts, pounded to even thickness",
+      "3 slicing tomatoes, chopped",
+      "2 cloves garlic, minced",
+      "1 tbsp. freshly chopped basil",
+      "4 slices mozzarella",
+      "Freshly grated Parmesan, for serving"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/23/1496939954-bruschetta-chicken-1sm.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "14 DT"
   },
   {
-    
-    "name": "Cucumber",
-    "benefits": "Bug", 
-    "imageUrl": "https://gardenerspath.com/wp-content/uploads/2021/05/benefits-of-Cucumbers-FB.jpg",
-    "price":""
+    "name": "Honey Garlic Glazed Salmon",
+    "ingredients": [
+      "1/3 c. honey",
+      "1/4 c. soy sauce",
+      "2 tbsp. lemon juice",
+      "1 tsp. red pepper flakes",
+      " 3 tbsp. extra-virgin olive oil, divided",
+      " 4 6-oz. salmon fillets, patted dry with a paper towel",
+      "  Kosher salt",
+      "  Freshly ground black pepper",
+      "  3 cloves garlic, minced",
+      " 1 lemon, sliced into rounds"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456214-delish-honey-garlic-glazed-salmon.jpg?resize=980:*",
+    "price": "16 DT"
   },
   {
-   
-    "name": "Eggplant",
-    "benefits": "Bug", 
-    "imageUrl": "https://cdn.theatlantic.com/thumbor/8oVr-FKH8sajN3l8fpGNPBDwqEc=/0x667:7285x4765/960x540/media/img/mt/2019/11/shutterstock_1486590509/original.jpg",
-    "price":""
+    "name": "Best-Ever Gluten-Free Pasta",
+    "ingredients": [
+      "2 1/3 c. gluten-free flour, such as Cup4Cup",
+      "2 tsp. xanthan gum",
+      "1 tsp. kosher salt",
+      "5 large eggs"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-gluten-free-pasta-110-1542829200.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "15 DT"
   },
   {
-    
-    "name": "Green bean",
-    "benefits": "Normal",
-    "imageUrl": "https://cgreenag.com/assets/images/crop-images/std/green%20beans%20erik.png",
-    "price":""
+    "name": "Zucchini Lattice Lasagna",
+    "ingredients": [
+      "2 c. ricotta",
+      " 1 c. freshly grated Parmesan, plus more for sprinkling",
+      "2 large eggs",
+      "Kosher salt",
+      " Freshly ground black pepper",
+      "1 1/2 c. marinara",
+      "3 large zucchini, cut into wide strips using a Y peeler and drained on paper towels",
+      " 3 c. shredded mozzarella"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-190605-zucchini-lasagna-203-portrait-pf-1560443934.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "13 DT"
   },
   {
-    
-    "name": "Lettuce",
-    "benefits": "Normal", 
-    "imageUrl": "https://images.medicinenet.com/images/article/main_image/is-it-safe-to-eat-romaine-lettuce.jpg",
-    "price":""
+    "name": "Harvest Chicken Casserole",
+    "ingredients": [
+      "2 tbsp. extra-virgin olive oil, divided, plus more for baking dish ",
+      "2 lb. boneless skinless chicken breasts",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "1/2 onion, chopped",
+      "2 medium sweet potatoes, peeled and cut into small cubes",
+      "1 lb. brussels sprouts, trimmed and quartered",
+      "2 cloves garlic, minced",
+      "2 tsp. fresh thyme leaves",
+      "1 tsp. paprika",
+      "1/2 tsp. ground cumin",
+      "1/2 c. low-sodium chicken broth, divided",
+      "6 c. cooked wild rice",
+      "1/2 c. dried cranberries",
+      "1/2 c. sliced almonds"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/39/1600x2399/gallery-1506456303-delish-healthy-chicken-casserole.jpg?resize=980:*",
+    "price": "13 DT"
   },
   {
-    
-    "name": "Mushrooms",
-    "benefits": "Normal", 
-    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-mushrooms-royalty-free-image-1614206095.",
-    "price":""
+    "name": "Garlicky Greek Chicken",
+    "ingredients": [
+      "3 tbsp. extra-virgin olive oil, divided",
+      "Juice of 1 lemon",
+      "3 cloves garlic, minced",
+      "1 tsp. dried oregano",
+      "1 lb. chicken thighs",
+      "kosher salt",
+      "Freshly ground black pepper",
+      "1/2 lb. asparagus, ends removed",
+      "1 zucchini, sliced into half moons",
+      "1 lemon, sliced"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/27/640x959/gallery-1499460644-garlicky-1.jpg?resize=980:*",
+    "price": "16 DT"
   },
   {
-   
-    "name": "Onion",
-    "benefits": "Normal",
-    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/full-frame-shot-of-mushrooms-royalty-free-image-1614206095.",
-    "price":""
+    "name": "Cauliflower Grilled Cheese",
+    "ingredients": [
+      "1 head cauliflower, (to make about 4 cups processed cauliflower)",
+      "2 eggs, lightly beaten",
+      "1/2 c. finely grated Parmesan",
+      "1/2 tsp. oregano",
+      "1 1/2 c. shredded white Cheddar"
+    ],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/10/1520261416-cauliflower-grilled-cheese-vertical.jpg?crop=0.804xw:0.806xh;0.143xw,0.0817xh&resize=980:*",
+    "price": "12 DT"
   },
   {
-    
-    "name": "Pea",
-    "benefits": "Normal",
-    "imageUrl": "https://www.almanac.com/sites/default/files/image_nodes/peas-and-pea-pods.jpg",
-    "price":""
+    "name": "Burrito Zucchini Boats",
+    "ingredients": ["3 zucchini, halved lengthwise",
+      "2 tbsp. extra-virgin olive oil, divided",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "1/2 onion, chopped",
+      "2 cloves garlic, minced",
+      "1 lb. ground beef",
+      "1/2 tsp. chili powder",
+      "1/2 tsp. ground cumin",
+      "1/4 tsp. paprika",
+      "1/2 c. black beans",
+      "1/2 c. chopped cherry tomatoes",
+      "1/2 c. corn",
+      "1 c. shredded cheddar",
+      "1 c. shredded Monterey jack",
+      "Freshly chopped cilantro, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-zucchini-burrito-boats-vertical-1-jpg-1536951081.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "12 DT"
   },
   {
-    
-    "name": "Potato",
-    "benefits": "Normal", 
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToDOR6Lah3jlphwUwpKPDymrkBCfBGhnho6Q&usqp=CAU",
-    "price":""
+    "name": "Baked Salmon",
+    "ingredients": ["2 lemons, thinly sliced",
+    "1 large salmon fillet (about 3 lb.)",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "6 tbsp. butter, melted",
+    "2 tbsp. honey",
+    "3 cloves garlic, minced",
+    "1 tsp. chopped thyme leaves",
+    "1 tsp. dried oregano",
+    "Chopped fresh parsley, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/vidthumb/images/gallery-1504715772-delish-baked-salmon-1-1529531188.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "15 DT"
   },
   {
-   
-    "name": "Pumpkin",
-    "benefits": "Normal", 
-    "imageUrl": "https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/article_thumbnails/slideshows/health_benefits_of_pumpkins_slideshow/1800x1200_health_benefits_of_pumpkins_slideshow.jpg",
-    "price":""
+    "name": "Garlicky Lemon Mahi-Mahi",
+    "ingredients": ["3 tbsp. butter, divided",
+    "2 tbsp. extra-virgin olive oil, divided",
+    "4 (4-oz.) mahi-mahi fillets",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 lb. asparagus",
+    "3 cloves garlic, minced",
+    "1/4 tsp. crushed red pepper flakes",
+    "1 lemon, sliced",
+    "Zest and juice of 1 lemon",
+    "1 tbsp. freshly chopped parsley, plus more for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/28/640x959/gallery-1499895128-garlicky-lemon-mahi-mahi-delish.jpg?resize=980:*",
+    "price": "16 DT"
   },
   {
-    
-    "name": "Radish",
-    "benefits": "Poison",
-    "imageUrl": "https://www.gardeningknowhow.com/wp-content/uploads/2009/03/radish.jpg",
-    "price":""
+    "name": "Cilantro Lime Salmon Bowls",
+    "ingredients":["3 red peppers, sliced into strips",
+    "2/3 c. olive oil, plus 1 tablespoon",
+    "kosher salt",
+    "Freshly ground black pepper",
+    "1/3 c. lime juice",
+    "2 tbsp. finely chopped cilantro, plus more for serving",
+    "2 tsp. honey",
+    "1 Garlic clove, minced",
+    "4 salmon filets",
+    "4 c. cooked brown rice",
+    "1 avocado, thinly sliced",
+    "Lime wedges, for serving"],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/18/07/640x959/gallery-1518631289-delish-cilantro-lime-salmon-buddha-bowls-pinterest-still003.jpg?resize=980:*",
+    "price": "18 DT"
   },
   {
-  
-    "name": "Sweet potato",
-    "benefits": "Poison",
-    "imageUrl": "https://m.media-amazon.com/images/I/71ofgqWjsCL._SL1500_.jpg",
-    "price":""
+    "name": "Cheesesteak Stuffed Peppers",
+    "ingredients":["4 bell peppers, halved",
+    "1 tbsp. vegetable oil",
+    "1 large onion, sliced",
+    "16 oz. cremini mushrooms, sliced",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 1/2 lb. sirloin steak, thinly sliced",
+    "2 tsp. Italian seasoning",
+    "16 slices provolone",
+    "Freshly chopped parsley, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-philly-cheesesteak-stuffed-peppers-horizontal-1537190073.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "15 DT"
   },
   {
-    
-    "name": "Tomato",
-    "benefits": "Electric",
-    "imageUrl": "https://post.healthline.com/wp-content/uploads/2020/09/tomatoes-1200x628-facebook-1200x628.jpg",
-    "price":""
+    "name": "Lasagna-Stuffed Zucchini",
+    "ingredients":["4 large zucchini, halved lengthwise",
+    "1 tbsp. extra-virgin olive oil ",
+    "1/2 onion, diced",
+    "2 cloves garlic, minced",
+    "1/2 lb. ground beef",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 c. jarred marinara",
+    "Pinch of crushed red pepper flakes",
+    "1 c. ricotta",
+    "1 c. shredded mozzarella",
+    "Freshly chopped parsley, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/singleimagebug-lasagna-stuffed-zucchini-pin-1560982245.jpg?crop=1xw:0.9453781512605042xh;center,top&resize=980:*",
+    "price": "17 DT"
+  },
+  {
+    "name": "Best Grilled Chicken Breast",
+    "ingredients": ["1/4 c. balsamic vinegar",
+    "3 tbsp. extra-virgin olive oil",
+    "2 tbsp. brown sugar",
+    "3 cloves garlic, minced",
+    "1 tsp. dried thyme",
+    "1 tsp. dried rosemary",
+    "4 chicken breasts",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "Freshly chopped parsley, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-grilled-chicken-breast-2-1529619183.jpg?crop=0.376xw:1.00xh;0.231xw,0&resize=980:*",
+    "price": "13 DT"
+  },
+  {
+    "name": "Spinach Artichoke Stuffed Peppers",
+    "ingredients": ["4 assorted bell peppers, halved and seeded",
+    "Extra-virgin olive oil, for drizzling",
+    "kosher salt",
+    "Freshly ground black pepper",
+    "2 c. shredded rotisserie chicken",
+    "1 (14-oz.) can artichoke hearts, drained and chopped",
+    "1 (10-oz.) package frozen spinach, thawed, well-drained, and chopped",
+    "6 oz. cream cheese, softened",
+    "1 1/2 c. shredded mozzarella, divided",
+    "1/2 c. grated Parmesan",
+    "1/4 c. sour cream",
+    "1/4 c. mayonnaise",
+    "2 cloves garlic, minced",
+    "Chopped fresh parsley, for garnish"],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/40/640x959/gallery-1507045453-delish-spinach-artichoke-stuffed-peppers-pinterest-still003.jpg?resize=980:*",
+    "price": "14 DT"
+  },
+  {
+    "name": "Greek Stuffed Chicken",
+    "ingredients": ["3 tbsp. extra-virgin olive oil",
+    "1 tbsp. lemon juice",
+    "1 tbsp. chopped dill, plus more for garnish",
+    "1 tbsp. chopped parsley, plus more for garnish",
+    "2 cloves garlic, minced",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "4 skinless boneless chicken breasts",
+    "1 zucchini, halved and thinly sliced",
+    "2 medium tomatoes, halved and thinly sliced",
+    "1/2 red onion, sliced into half moons",
+    "2 lemons, halved and thinly sliced",
+    "1 c. crumbled feta",
+    "1 c. shredded mozzarella"],
+    "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/greek-stuffed-chicken-vertical-1534280495.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "price": "17 DT"
+  },
+  {
+    "name": "Zucchini Lasagna Roll-Ups",
+    "ingredients": ["6 large zucchini",
+    "1 (16-oz.) container ricotta",
+    "3/4 c. freshly grated Parmesan, divided",
+    "2 large eggs",
+    "1/2 tsp. garlic powder",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 c. marinara",
+    "1 c. grated mozzarella"],
+    "imageUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/16/25/640x959/gallery-1466864130-delish-zucchini-lasagna-roll-ups-03.jpg?resize=980:*",
+    "price": "16 DT"
   }
-    ]
+]

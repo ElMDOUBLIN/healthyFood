@@ -28,8 +28,10 @@ exports.retrieveOne = function (req, res) {
 };
 // update one item
 exports.updateOne = function (req, res) {
-    const id = req.params.id;
-    Item.findOneAndUpdate({ _id: id }, req.body).then((result) => {
+
+    const id = req.params.id
+    // console.log(req.params.id)
+    Item.findByIdAndUpdate(id, req.body).then((result) => {
         res.json(result)
     }).catch((err) => {
         res.send(err)
