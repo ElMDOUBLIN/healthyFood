@@ -25,6 +25,7 @@ class Admin extends React.Component {
   create() {
     axios.post("http://localhost:3000/api/admin", this.state).then((data) => {
       console.log(data);
+      this.props.fetch();
     });
   }
   delItem(id) {
@@ -92,8 +93,10 @@ class Admin extends React.Component {
         </div>
         <div>
           <ul className="item-list">
-            {this.props.items.map((item, index) => (
-              <li key={index} className="item-list-item">
+            {this.props.items.map((item, index) => {
+               if(item.name.includes(this.props.word)){
+                return(<div key={index}>
+              <li className="item-list-item">
                 <h1>{item.name}</h1>
                 <img
                   src={item.imageUrl}
@@ -122,7 +125,8 @@ class Admin extends React.Component {
                   </button>
                 </p>
               </li>
-            ))}
+              </div>
+            )}})}
           </ul>
         </div>
       </div>

@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 var morgan = require('morgan');
 var db = require('./db');
 var ItemRouter = require('../server/Item/ItemRouter')
+var AuthRouter = require('../server/Item/AuthRouter')
 
 var app = express();
 
@@ -15,6 +16,7 @@ app.use(express.static(__dirname + '/../client/dist'));
 
 // route
 app.use("/", ItemRouter)
+app.use("/", AuthRouter)
 
 
 app.get('/', function (req, res) {

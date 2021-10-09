@@ -1,27 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
-
+import Authentication from "./components/Authentication.jsx";
 import Itemlist from "./components/Itemlist.jsx";
-import Itemdetails from "./components/Itemdetails.jsx";
+import Search from "./components/Search.jsx";
 import Admin from "./components/Admin.jsx";
 import Update from "./components/Update.jsx";
+import Signin from "./components/Signin.jsx";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
+      user: {},
+      isAuthenticated: false,
       view: "itemlist",
       items: [],
       item: {},
+      word:'',
     };
     this.changeView = this.changeView.bind(this);
     this.fetch = this.fetch.bind(this);
-  }
+    this.updateUser = this.updateUser.bind(this);
+    this.searching = this.searching.bind(this)
 
+  }
+  searching(word){
+    this.setState({word:word})
+  }
   fetch() {
     axios.get("http://localhost:3000/api/admin").then((data) => {
-      // console.log(data.data);
       this.setState({ items: data.data });
     });
   }
@@ -34,36 +42,54 @@ class App extends React.Component {
       item: item,
     });
   }
+ 
 
-  // updateitem(updateitem) {
-  //   this.setState({
-  //     items: this.state.items.filter((item) => item._id !== updateitem._id),
-  //   });
-  // }
+  updateUser(data) {
+    this.setState({
+      isAuthenticated: true,
+      user: data.user
+    })
+  }
+
   renderView() {
     const { view } = this.state;
-    if (view === "itemlist") {
-      return <Itemlist items={this.state.items} />;
-    } else if (view === "admin") {
-      return (
-        <Admin
-          item={this.state.item}
-          items={this.state.items}
-          fetch={this.fetch}
-          changeView={this.changeView}
-        />
-      );
-    } else if (view === "update") {
-      return (
-        <Update
-          item={this.state.item}
-          items={this.state.items}
-          fetch={this.fetch}
-          changeView={this.changeView}
-        />
-      );
+    if (this.state.isAuthenticated) {
+      if (view === "itemlist") {
+        return <Itemlist  word={this.state.word} items={this.state.items} />;
+      } else if (view === "signin") {
+        return (
+          <Signin
+         
+            item={this.state.item}
+            items={this.state.items}
+            fetch={this.fetch}
+            changeView={this.changeView}
+          />
+        );
+      }
+      else if (view === "admin") {
+        return (
+          <Admin
+         
+            item={this.state.item}
+            items={this.state.items}
+            fetch={this.fetch}
+            changeView={this.changeView}
+            word={this.state.word}
+          />
+        );
+      } else if (view === "update") {
+        return (
+          <Update
+            item={this.state.item}
+            items={this.state.items}
+            fetch={this.fetch}
+            changeView={this.changeView}
+          />
+        );
+        }
     } else {
-      return <Itemdetails />;
+      return <Authentication   updateUser={this.updateUser} />
     }
   }
 
@@ -73,6 +99,9 @@ class App extends React.Component {
         <div className="nav">
           <span className="logo" onClick={() => this.changeView("itemlist")}>
             HealthyFood
+          </span>
+          <span>
+          <Search data={this.state.items} searching={this.searching}/>  
           </span>
           <span
             className={
@@ -87,13 +116,12 @@ class App extends React.Component {
               this.state.view === "admin" ? "nav-selected" : "nav-unselected"
             }
             onClick={() => {
-              this.changeView("admin");
+              this.changeView("signin");
             }}
           >
             Admin
           </span>
         </div>
-
         <div className="main">{this.renderView()}</div>
       </div>
     );
