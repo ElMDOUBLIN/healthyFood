@@ -94,39 +94,41 @@ class Admin extends React.Component {
         <div>
           <ul className="item-list">
             {this.props.items.map((item, index) => {
-               if(item.name.includes(this.props.word)){
-                return(<div key={index}>
-              <li className="item-list-item">
-                <h1>{item.name}</h1>
-                <img
-                  src={item.imageUrl}
-                  style={{ width: "90%", height: "50%" }}
-                />
-                <p>{item.ingredients}</p>
-                <p className="price">{item.price}</p>
-                <p>
-                  <button
-                    className="btn"
-                    onClick={() => {
-                      this.props.changeView("update", item);
-                    }}
-                  >
-                    update
-                  </button>
-                  <br></br>
-                  <br></br>
-                  <button
-                    className="btn"
-                    onClick={() => {
-                      this.delItem(item._id);
-                    }}
-                  >
-                    delete
-                  </button>
-                </p>
-              </li>
-              </div>
-            )}})}
+              if (item.name.includes(this.props.word)) {
+                return (<div key={index}>
+                  <li className="item-list-item">
+                    <h1>{item.name}</h1>
+                    <img
+                      src={item.imageUrl}
+                      style={{ width: "90%", height: "50%" }}
+                    />
+                    <p>{item.ingredients}</p>
+                    <p className="price">{item.price}</p>
+                    <p>
+                      <button
+                        className="btn"
+                        onClick={() => {
+                          this.props.changeView("update", item);
+                        }}
+                      >
+                        update
+                      </button>
+                      <br></br>
+                      <br></br>
+                      <button
+                        className="btn"
+                        onClick={() => {
+                          this.delItem(item._id);
+                        }}
+                      >
+                        delete
+                      </button>
+                    </p>
+                  </li>
+                </div>
+                )
+              }
+            })}
           </ul>
         </div>
       </div>

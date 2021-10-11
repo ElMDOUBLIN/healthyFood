@@ -7,7 +7,8 @@ import Search from "./components/Search.jsx";
 import Admin from "./components/Admin.jsx";
 import Update from "./components/Update.jsx";
 import Signin from "./components/Signin.jsx";
-
+import Itemdetails from "./components/Itemdetails.jsx";
+import Order from "./components/Order.jsx";
 class App extends React.Component {
   constructor() {
     super();
@@ -17,7 +18,7 @@ class App extends React.Component {
       view: "itemlist",
       items: [],
       item: {},
-      word:'',
+      word: '',
     };
     this.changeView = this.changeView.bind(this);
     this.fetch = this.fetch.bind(this);
@@ -25,8 +26,8 @@ class App extends React.Component {
     this.searching = this.searching.bind(this)
 
   }
-  searching(word){
-    this.setState({word:word})
+  searching(word) {
+    this.setState({ word: word })
   }
   fetch() {
     axios.get("http://localhost:3000/api/admin").then((data) => {
@@ -42,7 +43,7 @@ class App extends React.Component {
       item: item,
     });
   }
- 
+
 
   updateUser(data) {
     this.setState({
@@ -55,11 +56,11 @@ class App extends React.Component {
     const { view } = this.state;
     if (this.state.isAuthenticated) {
       if (view === "itemlist") {
-        return <Itemlist  word={this.state.word} items={this.state.items} />;
+        return <Itemlist changeView={this.changeView} word={this.state.word} items={this.state.items} />;
       } else if (view === "signin") {
         return (
           <Signin
-         
+
             item={this.state.item}
             items={this.state.items}
             fetch={this.fetch}
@@ -70,7 +71,7 @@ class App extends React.Component {
       else if (view === "admin") {
         return (
           <Admin
-         
+
             item={this.state.item}
             items={this.state.items}
             fetch={this.fetch}
@@ -78,7 +79,22 @@ class App extends React.Component {
             word={this.state.word}
           />
         );
-      } else if (view === "update") {
+      } else if (view === "details") {
+        return (
+          <Itemdetails
+            item={this.state.item}
+          />
+        );
+
+      } else if (view === "order") {
+        return (
+          <Order
+            changeView={this.changeView}
+          />
+        );
+
+      }
+      else if (view === "update") {
         return (
           <Update
             item={this.state.item}
@@ -87,9 +103,9 @@ class App extends React.Component {
             changeView={this.changeView}
           />
         );
-        }
+      }
     } else {
-      return <Authentication   updateUser={this.updateUser} />
+      return <Authentication updateUser={this.updateUser} />
     }
   }
 
@@ -100,8 +116,8 @@ class App extends React.Component {
           <span className="logo" onClick={() => this.changeView("itemlist")}>
             HealthyFood
           </span>
-          <span>
-          <Search data={this.state.items} searching={this.searching}/>  
+          <span className="logo">
+            <Search data={this.state.items} searching={this.searching} />
           </span>
           <span
             className={

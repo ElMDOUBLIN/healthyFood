@@ -33,50 +33,51 @@ export default class Authentication extends React.Component {
       })
       .then(({ data }) => {
         console.log(data);
-        if(data === 'User already exists'){
-        alert('User already exists');
-         } else {
-           alert('You have been signed up successfully')
-         }
+        if (data === 'User already exists') {
+          alert('User already exists');
+        } else {
+          alert('You have been signed up successfully')
+        }
       });
   }
 
   signin(event) {
     event.preventDefault();
     axios
-    
+
       .post("/api/auth/signin", {
         username: this.state.username,
         password: this.state.password
       })
       .then(({ data }) => {
-        if(data==="User doesn't exist"){alert("User doesn't exist")}
-        else if(data==="Wrong password"){alert("Wrong password")}
-        else{
-        this.props.updateUser(data);}
+        if (data === "User doesn't exist") { alert("User doesn't exist") }
+        else if (data === "Wrong password") { alert("Wrong password") }
+        else {
+          this.props.updateUser(data);
+        }
       });
   }
 
   render() {
     return (
       <div>
-        <h1>Authentication page</h1>
+        <h2>Authentication page</h2>
         {this.state.view === "signup" ? (
           <div className="create">
             <div className="create-editor">
-              <h2>Signup</h2>
+              <h2>Signup:</h2>
               <form>
-                <input id="username"  type="text" placeholder="Username" value={this.state.username} onChange={this.handleChange} />
-                <input id="password" type="text" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
-                <button className="create-submit-button" type="submit" onClick={this.signup}>
-                  signup
+                <input id="username" type="text" placeholder="Username" value={this.state.username} onChange={this.handleChange} />
+                <input id="password" type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
+                <button className="btn" type="submit" onClick={this.signup}>
+                  Sign up
                 </button>
                 <span
                   style={{ marginLeft: "20px" }}
                   onClick={() => {
                     this.changeView("signin");
                   }}>
-                  click here to signin
+                  <h3 > click here to signin</h3>
                 </span>
               </form>
             </div>
@@ -84,19 +85,19 @@ export default class Authentication extends React.Component {
         ) : (
           <div className="create">
             <div className="create-editor">
-              <h2>Signin</h2>
+              <h2>Signin:</h2>
               <form>
                 <input id="username" className="create-input" type="text" placeholder="Username" value={this.state.username} onChange={this.handleChange} />
-                <input id="password" className="create-input" type="text" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
-                <button className="create-submit-button" type="submit" onClick={this.signin}>
-                  signin
+                <input id="password" className="create-input" type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
+                <button className="btn" type="submit" onClick={this.signin}>
+                  Sign in
                 </button>
                 <span
                   style={{ marginLeft: "20px" }}
                   onClick={() => {
                     this.changeView("signup");
                   }}>
-                  click here to signup
+                  <h3 >click here to signup</h3>
                 </span>
               </form>
             </div>
